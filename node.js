@@ -1,3 +1,5 @@
+// Created package.json with command npm init in terminal
+// installed express module with command npm install express
 var HTTP_PORT = process.env.PORT || 3000;
 
 var express = require("express");
@@ -30,3 +32,4 @@ app.get("*", (req, res) => {
 const server = app.listen(HTTP_PORT, () => {
     console.log(`Listening on port ${HTTP_PORT}`);
 });
+
