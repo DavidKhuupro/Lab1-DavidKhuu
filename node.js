@@ -1,5 +1,8 @@
+// Lab 1 Routing Practice using Node and Express - David Khuu
+
 // Created package.json with command npm init in terminal
 // installed express module with command npm install express
+
 var HTTP_PORT = process.env.PORT || 3000;
 
 var express = require("express");
