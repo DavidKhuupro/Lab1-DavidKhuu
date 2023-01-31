@@ -13,13 +13,13 @@ app.get("/", (req, res) => {
 
 // Request message to endpoint 127.0.0.1:3000/echo
 app.get("/echo", (req, res) => {
-    res.send(`<h1>SUCESS! echo</h1>`);
+    res.send(`<h1>SUCCESS! echo</h1>`);
 });
 
 // Request message to endpoint 127.0.0.1:3000/foxtrot/kilo
-app.get("/foxtrot", (req, res) => {
+app.get("/foxtrot/:id?", (req, res) => {
     var id = req.params.id;
-    res.send(`<h1>SUCCESS! Recieved ${id} via foxtrot </h1>`);
+    res.send(`<h1>SUCCESS! Received ${id} via foxtrot </h1>`);
 });
 
 // Request message to endpoint 127.0.0.1:3000/any other value
